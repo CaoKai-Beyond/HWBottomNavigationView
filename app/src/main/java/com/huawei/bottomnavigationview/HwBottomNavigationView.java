@@ -541,17 +541,34 @@ public class HwBottomNavigationView extends LinearLayout {
     private void addItem(MenuItem menuItem, int maxIndex) {
         Context context = this.context;
         boolean isLandscape = !this.IsPortLayout && this.context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
-        ItemLayout eVar = new ItemLayout(context, menuItem, isLandscape, maxIndex);
-        ItemLayout view = eVar;
-        ItemLayout view2 = eVar;
-        eVar.ActiveColor = this.iconActiveColor;
-        view2.setLayout(false, true);
-        view2 = view;
-        view.DefaultColor = this.iconDefaultColor;
-        view2.setLayout(false, true);
-        view.setMsgBgColor(this.messageBgColor);
-        view.setOnClickListener(this.mItemOnClick);
-        addView(view);
+        ItemLayout itemLayout = new ItemLayout(context, menuItem, isLandscape, maxIndex);
+        itemLayout.ActiveColor = this.iconActiveColor;
+        itemLayout.setLayout(false, true);
+        itemLayout.DefaultColor = this.iconDefaultColor;
+        itemLayout.setLayout(false, true);
+        itemLayout.setMsgBgColor(this.messageBgColor);
+        itemLayout.setOnClickListener(this.mItemOnClick);
+        setItemBackground(itemLayout);
+        addView(itemLayout);
+    }
+
+    private void setItemBackground(ItemLayout itemLayout){
+        try {
+            int[] attrs = new int[]{android.R.attr.selectableItemBackground /* index 0 */};
+            // Obtain the styled attributes. 'themedContext' is a context with a
+            // theme, typically the current Activity (i.e. 'this')
+            TypedArray ta = getContext().obtainStyledAttributes(attrs);
+            // Now get the value of the 'listItemBackground' attribute that was
+            // set in the theme used in 'themedContext'. The parameter is the index
+            // of the attribute in the 'attrs' array. The returned Drawable
+            // is what you are after
+            Drawable drawableFromTheme = ta.getDrawable(0 /* index */);
+            // Finally free resources used by TypedArray
+            ta.recycle();
+            itemLayout.setBackground(drawableFromTheme);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
     public void setItemHasMessage(int index,boolean has){
