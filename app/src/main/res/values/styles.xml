@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+
+    <style name="HwBottomNavigationView">
+        <item name="android:background">@color/hwbottomnavigationview_bg</item>
+        <item name="iconDefaultColor">@color/emui_color_gray_7</item>
+        <item name="iconActiveColor">@color/emui_accent</item>
+        <item name="messageBgColor">@color/hwbottomnav_message_bg</item>
+    </style>
+
+
+</resources>

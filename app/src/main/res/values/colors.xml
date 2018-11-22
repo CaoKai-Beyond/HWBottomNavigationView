@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="emui_color_gray_7">#808080</color>
+    <color name="hwbottomnavigationview_bg">#f2f2f2</color>
+    <color name="emui_accent">#007dff</color>
+    <color name="hwbottomnav_message_bg">#ff0000</color>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hwbottomnav_item_icon_size">24dp</dimen>
+    <dimen name="hwbottomnav_item_port_minheight">50dp</dimen>
+    <dimen name="hwbottomnav_item_top_margin">2dp</dimen>
+    <dimen name="hwbottomnav_item_start_magin">8dp</dimen>
+    <dimen name="hwbottomnav_item_land_minheight">40dp</dimen>
+    <dimen name="hwbottomnav_item_vertical_padding">4dp</dimen>
+    <dimen name="hwbottomnav_item_horizontal_padding">8dp</dimen>
+    <dimen name="hwbottomnav_item_red_dot_radius">3dp</dimen>
+    <dimen name="hwbottomnav_item_text_margin">4dp</dimen>
+
+</resources>

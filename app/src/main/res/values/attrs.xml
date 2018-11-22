@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TranslateAnimation">
+        <attr name="fromXDelta" format="float"/>
+        <attr name="fromYDelta" format="float"/>
+        <attr name="toXDelta" format="float"/>
+        <attr name="toYDelta" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="HwTextView">
+        <attr name="hwAutoSizeMinTextSize" format="dimension"/>
+        <attr name="hwAutoSizeStepGranularity" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="HwBottomNavigationView">
+        <attr name="bottomNavMenu" format="reference"/>
+        <attr name="iconDefaultColor" format="color"/>
+        <attr name="iconActiveColor" format="color"/>
+        <attr name="messageBgColor" format="color"/>
+        <attr name="android_background" format="reference"/>
+    </declare-styleable>
+
+</resources>

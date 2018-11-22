@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="hwbottomnav_icon_anim_duration">200</integer>
+    <integer name="hwbottomnav_item_port_textsize">10</integer>
+    <integer name="hwbottomnav_item_land_textsize">12</integer>
+    <integer name="hwbottomnav_text_stepgranularity">1</integer>
+    <integer name="hwbottomnav_item_min_textsize">9</integer>
+
+</resources>
